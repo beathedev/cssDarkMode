@@ -1,0 +1,76 @@
+:root.light {
+    /* background related: */
+    --header-color: #a1a1a1;
+    --card-color: #dddddd17;
+    --card-text-color: #000;
+
+    /* text related: */ 
+    --body-text: Times, Georgia, sans-serif;
+    --title-text: Arial, serif;
+    --font-color-header: #fff; 
+    --shadow: 2px 2px 8px rgba(0, 0, 0, 0.2)
+}
+
+:root.dark {
+    /* background related: */
+    --header-color: #28282b;
+    --card-color: #313131fd;
+    --font-color-header: #fff; 
+    --card-text-color: #fff;
+    --shadow: 2px 2px 8px rgba(0, 0, 0, 0.2)
+
+    /* text related: */ 
+    --body-text: Times, Georgia, sans-serif;
+    --title-text: Arial, serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all ease 0.2s;
+}
+
+body {
+    background-color: var(--primary-color);
+    font-family: var(--body-text);
+
+}
+
+.card {
+    text-align: center;
+    background-color: var(--card-color);
+    color: var(--card-text-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 700px;
+    padding: 50px;
+
+}
+
+.card button {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    padding: 10px
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 80px;
+    background-color: var(--header-color);
+    box-shadow: var(--shadow);
+
+}
+
+nav h1 {
+    margin: 0;
+    text-align: center;
+    color: var(--font-color-header);
+    font-family: var(--title-text);
+
+}
